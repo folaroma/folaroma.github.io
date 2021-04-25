@@ -99,41 +99,93 @@ body {
 }
 
 .menu .nav a {
-	color: black;
 	margin: 0 0 0px;
 	display: inline-block;
 	height: 12px;
 	padding: 2px;
-	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
-	transition: text-decoration-color 300ms;
 }
-
-.menu .nav a:hover {
-	text-decoration-color: black;
-}
-
-.menu .nav ul.nav-right {
-	float: right;
-	margin-right: 20%;
-}
-
-.menu .nav ul.nav-right li a {
-	color: rgb(244, 0, 0);
-}
-
-.menu .nav ul.nav-right li a:hover {
-	text-decoration-color: rgb(244, 0, 0);
-}
-
 
 .menu .nav ul.nav-categories {
 	clear: both;
 	margin-left: 20%;
 }
 
-.in-progress {
-	animation: blinker 1.3s step-start infinite;
+.lang-button {
+	color: blue;
+	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
+	transition: text-decoration-color 300ms;
 }
+
+.lang-button:hover {
+	text-decoration-color: blue;
+}
+
+.charity {
+	display: inline-block;
+	color: rgb(244, 0, 0);
+	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
+	transition: text-decoration-color 300ms;
+}
+
+.charity:hover {
+	text-decoration-color: rgb(244, 0, 0);
+}
+
+
+.basic {
+	color: black;
+	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
+	transition: text-decoration-color 300ms;
+}
+
+.basic:hover {
+	text-decoration-color: black;
+}
+
+.projects {
+	color: rgb(179, 0, 255);
+	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
+	transition: text-decoration-color 300ms;
+}
+
+.projects:hover {
+	text-decoration-color: rgb(179, 0, 255);;
+}
+
+.contact {
+	color: blue;
+	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
+	transition: text-decoration-color 300ms;
+}
+
+.contact:hover {
+	text-decoration-color: blue;
+}
+
+.music {
+	color: rgb(4, 217, 92);
+	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
+	transition: text-decoration-color 300ms;
+}
+
+.music:hover {
+	text-decoration-color: rgb(4, 217, 92);
+}
+
+.feed {
+	color: rgb(255, 221, 0);
+	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
+	transition: text-decoration-color 300ms;
+}
+
+.feed:hover {
+	text-decoration-color: rgb(255, 221, 0);
+}
+
+.in-progress {
+	animation: blinker 0.75s step-start infinite;
+}
+
 
 @keyframes blinker {
 	50% {
