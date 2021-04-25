@@ -83,11 +83,11 @@ body {
 }
 
 .menu .nav {
-	font-weight: 900;
+	font-weight: 700;
 	margin: 175px 0;
 	font-size: 14px;
 	letter-spacing: -0.02em;
-	font-family: 'Satoshi', sans-serif;
+	font-family: 'Satoshi', 'Noto Sans KR', sans-serif;
 }
 
 .menu .nav ul {
@@ -118,15 +118,25 @@ body {
 }
 
 .menu .nav ul.nav-right li a {
-	color: rgb(214, 0, 0);
+	color: rgb(244, 0, 0);
 }
 
 .menu .nav ul.nav-right li a:hover {
-	text-decoration-color: rgb(214, 0, 0);
+	text-decoration-color: rgb(244, 0, 0);
 }
 
 
 .menu .nav ul.nav-categories {
 	clear: both;
 	margin-left: 20%;
+}
+
+.in-progress {
+	animation: blinker 1.3s step-start infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
 }

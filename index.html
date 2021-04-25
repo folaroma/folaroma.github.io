@@ -3,10 +3,11 @@
 <head>
 
 <link rel="stylesheet" href="css/main.css">
-<script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <link href="https://api.fontshare.com/css?f[]=satoshi@500,600,660,700,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;900&display=swap" rel="stylesheet">
 
 <title>Daniel Kim</title>
 <meta name="path_role" content="ETC" />
@@ -27,16 +28,23 @@
                 
               <div class="header">
                     <div class="logo">
+                      <span lang="en">
                       <svg viewBox="0 0 69.99 9" xmlns="http://www.w3.org/2000/svg">
                         <text x="0" y="9">Daniel Kim</text>
                       </svg>
+                      </span>
+                      <span lang="kr">
+                      <svg viewBox="0 0 69.99 9" xmlns="http://www.w3.org/2000/svg">
+                        <text x="15.5" y="10">김정원</text>
+                      </svg>
+                      </span>
                     </div>
               </div>
 
               <div class="row nav mobiledisplaynone">
                   <ul>
 
-                    <li style="margin-top:0px;"><a href="" class="currency-krw">EN</a> / <a href="" class="currency-usd cur-active">KR</a></li>
+                    <li style="margin-top:0px;"><a href="#" hreflang="en" onclick="setLang('en'); return false">EN</a> / <a href="#" hreflang="kr" onclick="setLang('kr'); return false">KR</a></li>
 
                     <li style="margin-top:20px;" class="sns-link">
                       <a href="https://github.com/folaroma" target="_blank"><img src = "img/github-icon.svg"></a>
@@ -53,18 +61,64 @@
                   </ul>
 
                   <ul class="nav-categories">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Resume</a></li>
-                    <li><a href="">Projects</a></li>
+                    <li><span lang="en"><a href="">About</a></span> <span lang="kr"><a href="">내소개</a></span></li>
+                    <li><span lang="en"><a href="">Resume</a></span> <span lang="kr"><a href="">이력서</a></span></li>
+                    <li class="in-progress"><span lang="en"><a href="">Projects (IN PROGRESS)</a></span> <span lang="kr"><a href="">진헹중인 프로젝트</a></span></li>
                     <li><a href=""></a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><span lang="en"><a href="">Contact</a></span> <span lang="kr"><a href="">연락처</a></span></li>
                   </ul>
 
                   <ul class="nav-right">
-                    <li><a href="">Charities</a></li>
+                    <li><span lang="en"><a href="">Charities</a></span> <span lang="kr"><a href="">자선 단체</a></span></li>
                   </ul>
               
               </div>
             </div>
+
+            <script>
+            
+            let langs = ['en', 'kr']; //Changed
+            let lang = 'en';
+            setLangStyles(lang);
+
+            function setStyles(styles) {
+              var elementId = '__lang_styles';
+              var element = document.getElementById(elementId);
+              if (element) {
+                element.remove();              
+              }
+
+              let style = document.createElement('style');
+              style.id = elementId;
+              style.type = 'text/css';
+
+              if (style.styleSheet) {
+                style.styleSheet.cssText = styles;
+              } else {
+                style.appendChild(document.createTextNode(styles));
+              }
+              document.getElementsByTagName('head')[0].appendChild(style);
+            }
+
+            function setLang(lang) {
+              debugger
+              setLangStyles(lang)
+            }
+
+            function setLangStyles(lang) {
+              let styles = langs
+              .filter(function(l) {
+                return l != lang;
+              })
+              .map(function(l) {
+                return ':lang(' + l + ') { display: none; }';
+              })
+              .join(' ');
+
+              setStyles(styles);
+            }
+
+            </script>
+
     </body>
 </html>
