@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html>
   
 <head>
 
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="/css/main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <link href="https://api.fontshare.com/css?f[]=satoshi@500,600,660,700,900&display=swap" rel="stylesheet">
@@ -27,29 +28,34 @@
             <div class="menu">
                 
               <div class="header">
-                    <div class="logo">
-                      <span lang="en">
-                      <svg viewBox="0 0 69.99 9" xmlns="http://www.w3.org/2000/svg">
+                <div class="logo">
+                    <a class href = "/index.html">
+                        <svg viewBox="0 0 69.99 9" xmlns="http://www.w3.org/2000/svg">
                         <text x="0" y="9">Daniel Kim</text>
-                      </svg>
-                      </span>
-                      <span lang="kr">
-                      <svg viewBox="0 0 69.99 9" xmlns="http://www.w3.org/2000/svg">
-                        <text x="15.5" y="10">김정원</text>
-                      </svg>
-                      </span>
-                    </div>
-              </div>
+                        </svg>
+                    </a>    
+                </div>
+          </div>
 
-              <div class="row nav mobiledisplaynone">
+              <div class="row nav">
                   <ul>
 
-                    <li style="margin-top:0px;"><a href="#" class="lang-button" hreflang="en" onclick="setLang('en'); return false">EN</a> / <a href="#" class="lang-button" hreflang="kr" onclick="setLang('kr'); return false">KR</a></li>
+                    <li style="margin-top:0px;">
+                      <a href="#" class="lang-button" hreflang="en" onclick="setLang('en'); return false">EN</a> 
+                      / 
+                      <a href="#" class="lang-button" hreflang="kr" onclick="setLang('kr'); return false">KR</a>
+                    </li>
 
                     <li style="margin-top:20px;" class="sns-link">
-                      <a href="https://github.com/folaroma" target="_blank"><img src = "img/github-icon.svg"></a>
-                      <a href="https://www.linkedin.com/in/daniel-kim-2906091ba" target="_blank"><img src = "img/linkedin-icon.svg"></a>
-                      <a href="https://www.instagram.com/dk.im" target="_blank"><img src = "img/instagram-icon.svg"></a>
+                      <a href="https://github.com/folaroma" target="_blank">
+                        <img src = "img/github-icon.svg">
+                      </a>
+                      <a href="https://www.linkedin.com/in/daniel-kim-2906091ba" target="_blank">
+                        <img src = "img/linkedin-icon.svg">
+                      </a>
+                      <a href="mailto: dkim1106@gmail.com">
+                        <img src = "img/iconmonstr-email-4.svg">
+                      </a>
                     </li>
                     
                     <style>
@@ -60,31 +66,53 @@
 
                   </ul>
 
-                  <ul class="nav-categories">
-                    <li><span lang="en"><a href="" class="basic">About</a></span> <span lang="kr"><a href="" class="basic">내소개</a></span></li>
-                    <li><span lang="en"><a href="" class="basic">Resume</a></span> <span lang="kr"><a href="" class="basic">이력서</a></span></li>
-                    <li class="in-progress"><span lang="en"><a href="" class="projects">Projects (IN PROGRESS)</a></span> <span lang="kr"><a href="" class="projects">진헹중인 프로젝트</a></span></li>
-                    <li><a href=""></a></li>
-                    <li><span lang="en"><a href="" class="contact">Contact</a></span> <span lang="kr"><a href="" class="contact">연락처</a></span></li>
-                  </ul>
+                  <div class="row-info">
 
-                  <ul class="nav-middle-left">
-                    <li><span lang="en"><a href="" class="music">Music</a></span> <span lang="kr"><a href="" class="music">음악</a></span></li>
-                  </ul>
+                    <ul class="nav-categories">
+                     <li>
+                        <span lang="en">
+                          <a href="/about.html" class="basic">About</a>
+                        </span> 
+                       <span lang="kr">
+                         <a href="/about.html" class="basic">내소개</a>
+                       </span>
+                     </li>
 
-                  <ul class="nav-middle-right">
-                    <li><span lang="en"><a href="" class="feed">Feed</a></span> <span lang="kr"><a href="" class="music">피드</a></span></li>
-                  </ul>
+                      <li><a href=""></a></li>
 
-                  <ul class="nav-right">
-                    <li><span lang="en"><a href="" class="charity">Charities</a></span> <span lang="kr"><a href="" class="charity">자선 단체</a></span></li>
-                  </ul>
+                    </ul>
+
+                    <ul class="nav-middle-left">
+                     <li>
+                       <span lang="en">
+                         <a href="/resume/resume (7).pdf" target="_blank" class="basic">Resume</a>
+                       </span> 
+                       <span lang="kr">
+                         <a href="/resume/resume (7).pdf" target="_blank" class="basic">이력서</a>
+                       </span>
+                     </li>
+                   </ul>  
+
+                    <ul class="nav-middle-right">
+                     <li class="in-progress">
+                       <span lang="en">
+                         <a href="/projects.html" class="projects">Projects (IN PROGRESS)</a>
+                       </span> 
+                       <span lang="kr">
+                         <a href="/projects.html" class="projects">진헹중인 프로젝트</a>
+                       </span>
+                       </li>
+                   </ul>    
+
+                  </div>
               
-              </div>
+               </div>
             </div>
 
             <script>
             
+            // https://stackoverflow.com/questions/54742105/javascript-language-switcher
+
             let langs = ['en', 'kr']; //Changed
             let lang = 'en';
             setLangStyles(lang);
@@ -127,6 +155,10 @@
             }
 
             </script>
+
+            <script id="__bs_script__">//<![CDATA[
+              document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.14'><\/script>".replace("HOST", location.hostname));
+            //]]></script>
 
     </body>
 </html>

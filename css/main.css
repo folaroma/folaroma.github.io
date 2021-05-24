@@ -83,9 +83,9 @@ body {
 }
 
 .menu .nav {
-	font-weight: 700;
+	font-weight: 900;
 	margin: 175px 0;
-	font-size: 14px;
+	font-size: 13px;
 	letter-spacing: -0.02em;
 	font-family: 'Satoshi', 'Noto Sans KR', sans-serif;
 }
@@ -96,6 +96,7 @@ body {
 	margin: 0 40px 83px;
 	line-height: 18px;
   	text-decoration: none;
+	margin-left: 3%;
 }
 
 .menu .nav a {
@@ -107,8 +108,9 @@ body {
 
 .menu .nav ul.nav-categories {
 	clear: both;
-	margin-left: 20%;
+	margin-left: 30%;
 }
+
 
 .lang-button {
 	color: blue;
@@ -119,18 +121,6 @@ body {
 .lang-button:hover {
 	text-decoration-color: blue;
 }
-
-.charity {
-	display: inline-block;
-	color: rgb(244, 0, 0);
-	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
-	transition: text-decoration-color 300ms;
-}
-
-.charity:hover {
-	text-decoration-color: rgb(244, 0, 0);
-}
-
 
 .basic {
 	color: black;
@@ -152,38 +142,8 @@ body {
 	text-decoration-color: rgb(179, 0, 255);;
 }
 
-.contact {
-	color: blue;
-	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
-	transition: text-decoration-color 300ms;
-}
-
-.contact:hover {
-	text-decoration-color: blue;
-}
-
-.music {
-	color: rgb(4, 217, 92);
-	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
-	transition: text-decoration-color 300ms;
-}
-
-.music:hover {
-	text-decoration-color: rgb(4, 217, 92);
-}
-
-.feed {
-	color: rgb(255, 221, 0);
-	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
-	transition: text-decoration-color 300ms;
-}
-
-.feed:hover {
-	text-decoration-color: rgb(255, 221, 0);
-}
-
 .in-progress {
-	animation: blinker 0.75s step-start infinite;
+	animation: blinker 0.65s step-start infinite;
 }
 
 
