@@ -54,7 +54,7 @@ body {
 }
 
 .menu {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -83,9 +83,9 @@ body {
 }
 
 .menu .nav {
-	font-weight: 900;
+	font-weight: 700;
 	margin: 175px 0;
-	font-size: 13px;
+	font-size: 14px;
 	letter-spacing: -0.02em;
 	font-family: 'Satoshi', 'Noto Sans KR', sans-serif;
 }
@@ -109,6 +109,70 @@ body {
 .menu .nav ul.nav-categories {
 	clear: both;
 	margin-left: 30%;
+}
+
+.about {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 180px 20px 40px;
+	max-width: 1200px;
+	font-family: 'Satoshi', 'Noto Sans KR', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	text-transform: none;
+	line-height: 130%;
+	flex-direction: row;
+}
+
+.about-section-1 {
+	overflow: hidden;
+	padding: 0px 0;
+	margin-top: 0;
+	margin-left: 20%;
+	position: relative;
+}
+
+.column-1 {
+	overflow: hidden;
+	display: inline-block;
+}
+
+.column-2 {
+	overflow: hidden;
+	width: 30%;
+	padding: 0 20px;
+	display: inline-block;
+}
+
+.about-section-2 {
+	overflow: hidden;
+	max-width: 960px;
+	margin: 15vh auto 10vh;
+	position: relative;
+	vertical-align: top;
+}
+
+.column-3 {
+	overflow: hidden;
+	margin-left: 20%;
+	padding: 0 20px;
+	display: inline-block;
+}
+
+.column-4 {
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.resume {
+	color: blue;
+	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
+	transition: text-decoration-color 300ms;
+}
+
+.resume:hover {
+	text-decoration-color: blue;
 }
 
 
@@ -146,9 +210,9 @@ body {
 	animation: blinker 0.65s step-start infinite;
 }
 
-
 @keyframes blinker {
 	50% {
 		opacity: 0;
 	}
 }
+
