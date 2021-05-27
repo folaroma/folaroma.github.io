@@ -7,13 +7,19 @@ li {
 }
 
 html {
-	overflow-x: hidden;
+	overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+html::-webkit-scrollbar {
+	width: 0;
+	height: 0;
 }
 
 body {
 	background: #FFF;
 	font-size-adjust: auto;
-	overflow-y: scroll;
 }
 
 #header {
@@ -54,7 +60,6 @@ body {
 }
 
 .menu {
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
