@@ -138,19 +138,16 @@ body {
 }
 
 .column-1 {
-	overflow: hidden;
 	display: inline-block;
 }
 
 .column-2 {
-	overflow: hidden;
-	width: 30%;
+	width: 26%;
 	padding: 0 20px;
 	display: inline-block;
 }
 
 .about-section-2 {
-	overflow: hidden;
 	max-width: 960px;
 	margin: 15vh auto 10vh;
 	position: relative;
@@ -158,14 +155,12 @@ body {
 }
 
 .column-3 {
-	overflow: hidden;
 	margin-left: 20%;
 	padding: 0 20px;
 	display: inline-block;
 }
 
 .column-4 {
-	overflow: hidden;
 	display: inline-block;
 	vertical-align: top;
 }
