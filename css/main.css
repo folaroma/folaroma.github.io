@@ -177,13 +177,13 @@ body {
 
 
 .lang-button {
-	color: blue;
+	color: black;
 	text-decoration: underline 2.5px rgba(0, 0, 0, 0);
 	transition: text-decoration-color 300ms;
 }
 
 .lang-button:hover {
-	text-decoration-color: blue;
+	text-decoration-color: black;
 }
 
 .basic {
