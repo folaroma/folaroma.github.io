@@ -92,7 +92,7 @@ body {
 	margin: 175px 0;
 	font-size: 14px;
 	letter-spacing: -0.02em;
-	font-family: 'Satoshi', 'Noto Sans KR', sans-serif;
+	font-family: 'Circular Std Bold', 'Noto Sans KR', sans-serif;
 }
 
 .menu .nav ul {
@@ -121,11 +121,11 @@ body {
 	overflow: hidden;
 	padding: 180px 20px 40px;
 	max-width: 1200px;
-	font-family: 'Satoshi', 'Noto Sans KR', sans-serif;
-	font-weight: 700;
+	font-family: 'Circular Std Medium', 'Noto Sans KR', sans-serif;
+	font-weight: 500;
 	font-size: 15px;
 	text-transform: none;
-	line-height: 130%;
+	line-height: 115%;
 	flex-direction: row;
 }
 
