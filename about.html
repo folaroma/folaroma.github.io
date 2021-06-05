@@ -66,8 +66,30 @@
                   </div>
 
                   <div class ="column-4">
-                    <img src ="img/12.jpg" style="width: 500px; height: auto;">
+                    <img class="mySlides" src ="slideshow/12.jpg" style="width: 500px; height: auto;">
+                    <img class="mySlides" src ="slideshow/5.jpg" style="width: 500px; height: auto;">
+                    <img class="mySlides" src ="slideshow/6.jpg" style="width: 500px; height: auto;">
+                    <img class="mySlides" src ="slideshow/14.jpg" style="width: 500px; height: auto;">
+                    <img class="mySlides" src ="slideshow/15.jpg" style="width: 500px; height: auto;">
+                    <img class="mySlides" src ="slideshow/17.jpg" style="width: 500px; height: auto;">
                   </div>
+
+                  <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 1500); // Change image every 2 seconds
+                    }
+                    </script>
 
                 </div>
 
