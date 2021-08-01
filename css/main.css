@@ -50,7 +50,7 @@ body {
 	height: 16px;
 	display: block !important;
 	text-align: center;
-  	margin: auto;
+  margin: auto;
 	font-size: 12px;
 	font-weight: 900;
 }
@@ -90,9 +90,9 @@ body {
 .menu .nav {
 	font-weight: 700;
 	margin: 175px 0;
-	font-size: 13px;
+	font-size: 15px;
 	letter-spacing: -0.02em;
-	font-family: 'Circular Std Bold', 'Noto Sans KR', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .menu .nav ul {
@@ -121,11 +121,11 @@ body {
 	overflow: hidden;
 	padding: 180px 20px 40px;
 	max-width: 1200px;
-	font-family: 'Circular Std Medium', 'Noto Sans KR', sans-serif;
-	font-weight: 500;
-	font-size: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
 	text-transform: none;
-	line-height: 115%;
+	line-height: 110%;
 	flex-direction: row;
 }
 
