@@ -122,7 +122,7 @@ body {
 	padding: 180px 20px 40px;
 	max-width: 1200px;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 16px;
 	text-transform: none;
 	line-height: 110%;
@@ -149,7 +149,7 @@ body {
 }
 
 .column-2 {
-	width: 26%;
+	width: 30%;
 	padding: 0 20px;
 	display: inline-block;
 }
