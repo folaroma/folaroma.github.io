@@ -88,7 +88,7 @@ body {
 }
 
 .menu .nav {
-	font-weight: 600;
+	font-weight: 700;
 	margin: 175px 0;
 	font-size: 14px;
 	font-family: 'Source Sans Pro', sans-serif, 'Noto+Sans+KR', sans-serif; 
@@ -256,7 +256,7 @@ body {
 	margin-left: auto
 }
 
-.row {
+.proj-row {
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: 25%;
@@ -275,7 +275,7 @@ body {
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
-	margin-top: 1rem!important;
+	margin-top: 2rem!important;
 }
 
 .image {
@@ -303,12 +303,12 @@ body {
 	opacity: 0;
 	-webkit-transition: .4s ease;
 	transition: .4s ease;
-	background-color: #42776a;
+	background-color: #a380d1;
 	z-index: 100;
 }
 
 .image-overlay:hover {
-	opacity: 70%;
+	opacity: 75%;
 }
 
 .image-overlay-text {
@@ -319,3 +319,4 @@ body {
 	margin-left: 5%;
 	margin-top: 5%;
 }
+
