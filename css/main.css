@@ -74,7 +74,7 @@ body {
 
 .menu .logo {
 	text-align: center;
-  	display: block;
+  display: block;
 	margin: 50px auto;
 	cursor: pointer;
 	width: 125px;
@@ -88,11 +88,10 @@ body {
 }
 
 .menu .nav {
-	font-weight: 700;
+	font-weight: 600;
 	margin: 175px 0;
-	font-size: 15px;
-	letter-spacing: -0.02em;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	font-family: 'Source Sans Pro', sans-serif, 'Noto+Sans+KR', sans-serif; 
 }
 
 .menu .nav ul {
@@ -216,7 +215,6 @@ body {
 	}
 }
 
-
 .justify-content-menu {
 	height: 18vh;
 	min-height: 100px;
@@ -258,11 +256,11 @@ body {
 	margin-left: auto
 }
 
-.proj-row {
+.row {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: -15px;
-	margin-left: -15px
+	margin-right: 25%;
+	margin-left: 25%;
 }
 
 .proj-card {
@@ -272,9 +270,7 @@ body {
 	cursor: pointer;
 }
 
-.col-p-1,
-.col-p-2,
-.col-p-3 {
+.col-md-1 {
 	position: relative;
 	width: 100%;
 	padding-right: 15px;
@@ -294,4 +290,32 @@ body {
 	-o-object-fit: contain;
 	object-fit: contain;
 	display: block
+}
+
+.image-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 15px;
+	right: 0;
+	height: 100%;
+	width: -webkit-calc(100% - 30px);
+	opacity: 0;
+	-webkit-transition: .4s ease;
+	transition: .4s ease;
+	background-color: #42776a;
+	z-index: 100;
+}
+
+.image-overlay:hover {
+	opacity: 70%;
+}
+
+.image-overlay-text {
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	margin-left: 5%;
+	margin-top: 5%;
 }
