@@ -2,4 +2,4 @@
  
 personal website inspired by: http://iamshop-online.com/
 
-planning to redesign through ReactJS or whatever
+planning to redesign through React or whatever idk
